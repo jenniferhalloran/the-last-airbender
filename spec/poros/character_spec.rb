@@ -11,8 +11,8 @@ RSpec.describe Character do
         expect(character2).to be_a Character
 
         expect(character1.name).to eq("Chan (Fire Nation admiral)")
-        expect(character1.allies).to eq(["Ozai"])
-        expect(character1.enemies).to eq(["Earth Kingdom"])
+        expect(character1.allies).to eq("Ozai")
+        expect(character1.enemies).to eq("Earth Kingdom")
         expect(character1.affiliation).to eq("Fire Nation Navy")
         
         expect(character1.photo_url).to eq nil 

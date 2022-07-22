@@ -4,11 +4,11 @@ RSpec.describe 'Search Index Page' do
     it "displays the members of a selected nation" do
         visit '/'
         select "Fire Nation"
-        
-        expect(current_path).to eq(/search)
+        click_button "Search For Members"
 
-        expect(page).to have_content("Members by Nation")
-        expect(page).to have_content("Some name")
+        expect(current_path).to eq("/search")
+
+        expect(page).to have_content("97 Members Total")
         
     end
     

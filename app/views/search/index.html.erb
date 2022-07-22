@@ -1,5 +1,6 @@
-<h1> <%= @total%> members total </h1>
+<h1> <%= @total%> Members Total </h1>
 
+<h3> First 25 Members Info: </h3>
 <ol><% @members.each do |member| %>
     <li><b> <%= member.name %> </b><br>
     <i> Allies: </i> <%= member.allies%> <br>
