@@ -14,6 +14,10 @@ class Character
     end
 
     def format_array(array)
-        array.join(", ")
+        if array.empty?
+            "None"
+        else 
+            array.join(", ")
+        end
     end
 end
