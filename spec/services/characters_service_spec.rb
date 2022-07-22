@@ -6,7 +6,7 @@ RSpec.describe CharactersService do
             data = CharactersService.characters_by_nation("Fire+Nation")
             
             expect(data).to be_an Array 
-
+            
             member = data[1]
             expect(member[:name]).to be_a String
             expect(member[:allies]).to be_an Array
